@@ -1,0 +1,47 @@
+;	STMicroelectronics dependencies file
+
+[Version]
+Keyword=ST7Project
+Number=1.3
+
+[Root.Kernel...\..\kernel\atomkernel.c.Config.0]
+ExternDep= ..\..\kernel\atomkernel.c D:\stm8\CXSTM8\Hstm8\modsl0.h  ../../kernel\atom.h ../../kernel\atomtimer.h atomport.h  stm8s-periphs\stm8s_type.h D:\stm8\CXSTM8\Hstm8\stddef.h
+
+[Root.Kernel...\..\kernel\atommutex.c.Config.0]
+ExternDep= ..\..\kernel\atommutex.c D:\stm8\CXSTM8\Hstm8\modsl0.h  ../../kernel\atom.h ../../kernel\atomtimer.h atomport.h  stm8s-periphs\stm8s_type.h D:\stm8\CXSTM8\Hstm8\stddef.h  ../../kernel\atommutex.h
+
+[Root.Kernel...\..\kernel\atomqueue.c.Config.0]
+ExternDep= ..\..\kernel\atomqueue.c D:\stm8\CXSTM8\Hstm8\modsl0.h  D:\stm8\CXSTM8\Hstm8\string.h ../../kernel\atom.h ../../kernel\atomtimer.h  atomport.h stm8s-periphs\stm8s_type.h D:\stm8\CXSTM8\Hstm8\stddef.h  ../../kernel\atomqueue.h
+
+[Root.Kernel...\..\kernel\atomsem.c.Config.0]
+ExternDep= ..\..\kernel\atomsem.c D:\stm8\CXSTM8\Hstm8\modsl0.h  ../../kernel\atom.h ../../kernel\atomtimer.h atomport.h  stm8s-periphs\stm8s_type.h D:\stm8\CXSTM8\Hstm8\stddef.h  ../../kernel\atomsem.h
+
+[Root.Kernel...\..\kernel\atomtimer.c.Config.0]
+ExternDep= ..\..\kernel\atomtimer.c D:\stm8\CXSTM8\Hstm8\modsl0.h  ../../kernel\atom.h ../../kernel\atomtimer.h atomport.h  stm8s-periphs\stm8s_type.h D:\stm8\CXSTM8\Hstm8\stddef.h
+
+[Root.Peripherals.stm8s-periphs\stm8s_clk.c.Config.0]
+ExternDep= stm8s-periphs\stm8s_clk.c D:\stm8\CXSTM8\Hstm8\modsl0.h  stm8s-periphs\stm8s_clk.h stm8s-periphs\stm8s.h stm8s-periphs\stm8s_type.h  stm8s_conf.h stm8s-periphs\stm8s_gpio.h stm8s-periphs\stm8s_tim1.h  stm8s-periphs\stm8s_uart2.h
+
+[Root.Peripherals.stm8s-periphs\stm8s_uart2.c.Config.0]
+ExternDep= stm8s-periphs\stm8s_uart2.c  D:\stm8\CXSTM8\Hstm8\modsl0.h stm8s-periphs\stm8s_uart2.h  stm8s-periphs\stm8s.h stm8s-periphs\stm8s_type.h stm8s_conf.h  stm8s-periphs\stm8s_clk.h stm8s-periphs\stm8s_gpio.h  stm8s-periphs\stm8s_tim1.h
+
+[Root.Peripherals.stm8s-periphs\stm8s_gpio.c.Config.0]
+ExternDep= stm8s-periphs\stm8s_gpio.c D:\stm8\CXSTM8\Hstm8\modsl0.h  stm8s-periphs\stm8s_gpio.h stm8s-periphs\stm8s.h stm8s-periphs\stm8s_type.h  stm8s_conf.h stm8s-periphs\stm8s_clk.h stm8s-periphs\stm8s_tim1.h  stm8s-periphs\stm8s_uart2.h
+
+[Root.Peripherals.stm8s-periphs\stm8s_tim1.c.Config.0]
+ExternDep= stm8s-periphs\stm8s_tim1.c D:\stm8\CXSTM8\Hstm8\modsl0.h  stm8s-periphs\stm8s_tim1.h stm8s-periphs\stm8s.h stm8s-periphs\stm8s_type.h  stm8s_conf.h stm8s-periphs\stm8s_clk.h stm8s-periphs\stm8s_gpio.h  stm8s-periphs\stm8s_uart2.h
+
+[Root.Port...\..\tests\sem1.c.Config.0]
+ExternDep= ..\..\tests\sem1.c D:\stm8\CXSTM8\Hstm8\modsl0.h  ../../kernel\atom.h ../../kernel\atomtimer.h atomport.h  stm8s-periphs\stm8s_type.h D:\stm8\CXSTM8\Hstm8\stddef.h  ../../kernel\atomsem.h ../../tests\atomtests.h atomport-tests.h  D:\stm8\CXSTM8\Hstm8\stdio.h
+
+[Root.Port.uart.c.Config.0]
+ExternDep= uart.c D:\stm8\CXSTM8\Hstm8\modsl0.h  D:\stm8\CXSTM8\Hstm8\stdio.h stm8s-periphs\stm8s.h stm8s-periphs\stm8s_type.h  stm8s_conf.h stm8s-periphs\stm8s_clk.h stm8s-periphs\stm8s_gpio.h  stm8s-periphs\stm8s_tim1.h stm8s-periphs\stm8s_uart2.h ../../kernel\atom.h  ../../kernel\atomtimer.h atomport.h D:\stm8\CXSTM8\Hstm8\stddef.h  ../../kernel\atommutex.h uart.h
+
+[Root.Port.tests-main.c.Config.0]
+ExternDep= tests-main.c D:\stm8\CXSTM8\Hstm8\modsl0.h  D:\stm8\CXSTM8\Hstm8\stdio.h ../../kernel\atom.h ../../kernel\atomtimer.h  atomport.h stm8s-periphs\stm8s_type.h D:\stm8\CXSTM8\Hstm8\stddef.h  atomport-private.h atomport-tests.h ../../tests\atomtests.h uart.h  stm8s-periphs\stm8s.h stm8s_conf.h stm8s-periphs\stm8s_clk.h  stm8s-periphs\stm8s_gpio.h stm8s-periphs\stm8s_tim1.h  stm8s-periphs\stm8s_uart2.h
+
+[Root.Port.atomport.c.Config.0]
+ExternDep= atomport.c D:\stm8\CXSTM8\Hstm8\modsl0.h  ../../kernel\atom.h ../../kernel\atomtimer.h atomport.h  stm8s-periphs\stm8s_type.h D:\stm8\CXSTM8\Hstm8\stddef.h atomport-private.h  stm8s-periphs\stm8s_tim1.h stm8s-periphs\stm8s.h stm8s_conf.h  stm8s-periphs\stm8s_clk.h stm8s-periphs\stm8s_gpio.h  stm8s-periphs\stm8s_uart2.h
+
+[Root.Port.stm8_interrupt_vector.c.Config.0]
+ExternDep= stm8_interrupt_vector.c  D:\stm8\CXSTM8\Hstm8\modsl0.h atomport-private.h
